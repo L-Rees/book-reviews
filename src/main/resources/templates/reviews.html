@@ -1,14 +1,17 @@
 <!DOCTYPE html>
 <html  xmlns:th="http://www.thymeleaf.org">
+<link rel="stylesheet" type="text/css" href="/style.css">
 <head>
 	<title>Lisa's Book Reviews</title>
 </head>
 <body>
-	<h1>Summer Reads: Reviews</h1>
+	<header>
+	<h1>Lisa Reads: Reviews</h1>
+	<p>A few of the books I read in the past year</p>
+	</header>
+
 	<div th:each= "review: ${reviews}">
-		<li>
-			<a th:href="@{/review(id=${review.id})}" th:text="${review.title}"></a>
-		</li>
+		<li><a th:href="@{/review(id=${review.id})}" th:text="${review.title}"></a></li>
 	</div>
 </body>
 </html>

@@ -27,7 +27,7 @@ public class ReviewRepository {
 		Review fourBook = new Review(4L,
 				"Texts From Jane Eyre: And Other Conversations with Your Favorite Literary Characters",
 				"Mallory Ortberg", "humor",
-				"	Hilarious book for the very literate! If you've read a lot of classic lit then this may be the book for you! What if Edgar Allan Poe, Emily Dickinson, or Rene Descartes had been able to text friends? What if the characters from Hamlet, Wuthering Heights, Little Women, The Lorax, or \"The Yellow Wallpaper\" had SMS?",
+				"Hilarious book for the very literate! If you've read a lot of classic lit then this may be the book for you! What if Edgar Allan Poe, Emily Dickinson, or Rene Descartes had been able to text friends? What if the characters from Hamlet, Wuthering Heights, Little Women, The Lorax, or \"The Yellow Wallpaper\" had SMS?",
 				"/images/textsFromJaneEyre.jpg");
 		reviewList.put(onebook.getId(), onebook);
 		reviewList.put(twoBook.getId(), twoBook);

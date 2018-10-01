@@ -1,0 +1,15 @@
+p {
+	line-height: 1.5;
+}
+
+body {
+	background-color: orange;
+}
+ 
+.book-info {
+	float: left;
+	display: inline-block;
+}
+.book-title {
+	font-style: italic;
+}
