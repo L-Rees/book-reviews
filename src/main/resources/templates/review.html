@@ -1,16 +1,23 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
+<div th:each = "review: ${reviews}">
 <head>
-	<title>A review</title>
+	<title th:text="${review.title}">A review</title>
 </head>
 <body>
-	<h1>A review</h1>
-	<div th:each = "review: ${reviews}">
-		<p th:text = "${review.title}"></p>
-		<p th:text = "${review.author}"></p>
-		<p th:text = "${review.genre}"></p>
-		<p th:text = "${review.content}"></p>
-	</div>
+	<h1>Lisa Reads</h1>
+	<article>
+		<header>
+		<h2 th:text = "${review.title}">A review</h2>
+			<p>by  <span th:text = "${review.author}"></span></p>
+			<img th:src="${review.imageUrl}">
+			<p>Genre:  <span th:text = "${review.genre}"></span></p>
+		</header>
+			<p th:text = "${review.content}"></p>
+			
 		
+	</article>
+	
 </body>
+</div>
 </html>
