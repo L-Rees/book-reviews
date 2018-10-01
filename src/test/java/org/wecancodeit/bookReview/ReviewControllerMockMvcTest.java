@@ -53,4 +53,14 @@ public class ReviewControllerMockMvcTest {
 		when(repository.findAll()).thenReturn(allReviews);
 		mvc.perform(get("/show-reviews")).andExpect(model().attribute("reviews", is(allReviews)));
 	}
+	@Test
+	public void shouldBeOkForOneReview() throws Exception{
+		mvc.perform(get("/review?id=1")).andExpect(status().isOk());
+	}
+	@Test
+	public void shouldPutAReviewIntoModel() throws Exception{
+		when(repository.findOne(1L)).thenReturn(firstReview);
+		mvc.perform(get("/review?id=1")).andExpect(model().attribute("review", is(firstReview)));
+	}
+	
 }
