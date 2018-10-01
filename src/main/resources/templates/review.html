@@ -6,6 +6,10 @@
 <body>
 	<h1>A review</h1>
 	<div th:each = "review: ${reviews}">
+		<p th:text = "${review.title}"></p>
+		<p th:text = "${review.author}"></p>
+		<p th:text = "${review.genre}"></p>
+		<p th:text = "${review.content}"></p>
 	</div>
 		
 </body>

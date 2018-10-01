@@ -2,7 +2,7 @@ package org.wecancodeit.bookReview;
 
 public class Review {
 
-	private Long id;
+	private long id;
 	private String title;
 	private String author;
 	private String genre;

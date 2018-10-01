@@ -60,7 +60,7 @@ public class ReviewControllerMockMvcTest {
 	@Test
 	public void shouldPutAReviewIntoModel() throws Exception{
 		when(repository.findOne(1L)).thenReturn(firstReview);
-		mvc.perform(get("/review?id=1")).andExpect(model().attribute("review", is(firstReview)));
+		mvc.perform(get("/review?id=1")).andExpect(model().attribute("reviews", is(firstReview)));
 	}
 	
 }
