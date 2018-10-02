@@ -6,10 +6,9 @@
 </head>
 <body>
 	<header>
-	<h1>Lisa Reads: Reviews</h1>
-	<p>A few of the books I've read kind of recently</p>
+		<h1>Lisa Reads: Reviews</h1>
+		<p>A few of the books I've read kind of recently</p>
 	</header>
-
 	<div th:each= "review: ${reviews}">
 		<li><a th:href="@{/review(id=${review.id})}" th:text="${review.title}"></a></li>
 	</div>
