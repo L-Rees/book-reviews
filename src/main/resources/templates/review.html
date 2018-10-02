@@ -12,14 +12,16 @@
 	<main>
 		<article>
 			<header>
-				<h2 class="book-title book-info" th:text = "${review.title}">A review</h2>
+				<h2 class="book-title" th:text = "${review.title}">A review</h2>
 				<img class="book-info" th:src="${review.imageUrl}">
-				<p class="book-info">By <strong><span th:text = "${review.author}"></span></strong></p>
-				<p class="book-info">Genre:  <strong><span th:text = "${review.genre}"></span></strong></p>
+				<p>By <strong><span th:text = "${review.author}"></span></strong></p>
+				<p>Genre:  <strong><span th:text = "${review.genre}"></span></strong></p>
 			</header>
 				<p th:text = "${review.content}"></p>
 		</article>
+
 	</main>
+	<a href="http://localhost:8080/show-reviews">Back to main</a>
 </body>
 </div>
 </html>
