@@ -12,8 +12,8 @@
 	<main>
 		<article>
 			<header>
+				<img class="book-image" th:src="${review.imageUrl}">
 				<h2 class="book-title" th:text = "${review.title}">A review</h2>
-				<img class="book-info" th:src="${review.imageUrl}">
 				<p>By <strong><span th:text = "${review.author}"></span></strong></p>
 				<p>Genre:  <strong><span th:text = "${review.genre}"></span></strong></p>
 			</header>
